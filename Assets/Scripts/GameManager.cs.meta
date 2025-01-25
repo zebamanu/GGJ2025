@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: cabd62ee6baefd347a80a4631a0cccb7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - vidaPerdida: {fileID: -748908704831994938, guid: 72fdf653b69751d48a63403ec411c33c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
