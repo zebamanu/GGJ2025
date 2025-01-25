@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0273, y: 0.0272, z: 0}
-  m_LocalScale: {x: 1.0073016, y: 1.0440242, z: 1}
+  m_LocalScale: {x: 1.7440953, y: 1.8076789, z: 1.7314531}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 99187332902489960}
@@ -113,8 +113,8 @@ Transform:
   m_GameObject: {fileID: 3879157228330676614}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.154, z: 0}
-  m_LocalScale: {x: 0.46967, y: 0.46967, z: 0.46967}
+  m_LocalPosition: {x: 0, y: 2.29, z: 0}
+  m_LocalScale: {x: 0.78641546, y: 0.8413199, z: 0.46967}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 99187332902489960}
@@ -394,7 +394,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.16037738, g: 0.023451408, b: 0.027601004, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -517,7 +517,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.81, y: -3.11, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.0833241, y: 1.0833241, z: 1.0833241}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5589715675633740237}
@@ -538,7 +538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84820a5eba57b2e438e698d84da67b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 4
+  velocity: 8
+  animator: {fileID: 0}
   spriteTransform: {fileID: 822979527431383965}
   interactLogo: {fileID: 3879157228330676614}
   navmesh: {fileID: 0}
