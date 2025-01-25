@@ -14,11 +14,14 @@ public class Player : MonoBehaviour
     [SerializeField] private NavMeshSurface navmesh;
     [SerializeField] private GameObject textoLlave;
 
+    private SpriteRenderer spriteRenderer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        spriteRenderer = spriteTransform.GetComponent<SpriteRenderer>();
     }
 
     public void SetCanInteract(bool value)
@@ -59,7 +62,7 @@ public class Player : MonoBehaviour
 
     public IEnumerator RebuildNavMesh()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.25f);
         navmesh.BuildNavMesh();
     }
 
@@ -73,6 +76,17 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         textoLlave.SetActive(false);
+    }
+
+    public IEnumerator BlinkCoroutine()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            spriteRenderer.color = new Color(spriteRenderer.color.r,spriteRenderer.color.g,spriteRenderer.color.b,0.5f);
+            yield return new WaitForSeconds(0.2f);
+            spriteRenderer.color = new Color(spriteRenderer.color.r,spriteRenderer.color.g,spriteRenderer.color.b,1f);
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf89e7b71e795f2408f614ae080cb3ab
+guid: 9ebccb608bedb6346b4a1213d6164c39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3168212750755497380
-    second: Puerta final_0
+      213: -4704314958945279949
+    second: Puerta final 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puerta final_0
+      name: Puerta final 1_0
       rect:
         serializedVersion: 2
         x: 1799
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a505adf5b0c7fb20800000000000000
-      internalID: 3168212750755497380
+      spriteID: 330a288287ae6beb0800000000000000
+      internalID: -4704314958945279949
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Puerta final 1_0: -4704314958945279949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

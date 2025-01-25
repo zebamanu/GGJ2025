@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Player" && tiempoInvulnerable <= 0)
         {
             GameManager.Instance.PerderVida();
+            StartCoroutine(playerTransform.GetComponent<Player>().BlinkCoroutine());
             tiempoInvulnerable = 2;
             capsuleCollider.enabled = false;
         }

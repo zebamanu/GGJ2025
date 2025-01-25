@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         vidasRestantes--;
         
         vidas[vidasRestantes].sprite = vidaPerdida;
+        
         if (vidasRestantes <= 0){
             Debug.Log("Game Over");
         }

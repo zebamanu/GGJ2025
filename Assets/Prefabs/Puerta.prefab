@@ -70,8 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpened: 0
-  openDoor: {fileID: 8300000, guid: d4bad82337e42864da3ce6be9bd4d672, type: 3}
-  closedDoor: {fileID: 8300000, guid: 99da32469194b654ea45f8ace973f564, type: 3}
+  openDoor: {fileID: 8300000, guid: c5bc602d452801a4b9488fae7f451efc, type: 3}
+  closedDoor: {fileID: 8300000, guid: 2a3b10b0cf1338c49b9abcf35e156e9a, type: 3}
 --- !u!82 &4270199856961117453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d4bad82337e42864da3ce6be9bd4d672, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d4bad82337e42864da3ce6be9bd4d672, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -293,5 +293,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.84, y: 11.89, z: 1}
+  m_Size: {x: 2.1, y: 11.8, z: 1.89}
   m_Center: {x: -0.51, y: 0, z: 0}
