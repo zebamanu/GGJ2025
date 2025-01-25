@@ -3,6 +3,7 @@ using UnityEngine;
 public class Silla : Interactuable
 {
     Animator animator;
+    
     void Start()
     {
         base.Start();
@@ -12,6 +13,7 @@ public class Silla : Interactuable
 
     protected override void Interact(){
         animator.SetTrigger("Girar");
+        playerController.animator.SetTrigger("Throw");
         Destroy(this);
     }
 }

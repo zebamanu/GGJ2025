@@ -5,11 +5,13 @@ public class Enemy : MonoBehaviour
 {
     private Transform playerTransform;
     private NavMeshAgent agent;
+    private CapsuleCollider capsuleCollider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerTransform = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
@@ -25,6 +27,7 @@ public class Enemy : MonoBehaviour
         else
         {
             agent.SetDestination(playerTransform.position);
+            capsuleCollider.enabled = true;
         }
     }
 
@@ -35,6 +38,7 @@ public class Enemy : MonoBehaviour
         {
             GameManager.Instance.PerderVida();
             tiempoInvulnerable = 2;
+            capsuleCollider.enabled = false;
         }
     }
 }

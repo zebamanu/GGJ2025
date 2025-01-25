@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Interactuable : MonoBehaviour
 {
-    Transform player;
+    protected Transform player;
     protected Player playerController;
     public void Start()
     {

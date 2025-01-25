@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private bool canInteract = false;
     private Interactuable interactuable;
     private Rigidbody rb;
-    private Animator animator;
+    public Animator animator;
     [SerializeField] private Transform spriteTransform;
     [SerializeField] private GameObject interactLogo;
     [SerializeField] private NavMeshSurface navmesh;
