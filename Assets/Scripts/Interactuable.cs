@@ -13,7 +13,7 @@ public abstract class Interactuable : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        if (Vector3.Distance(player.position, transform.position) < 5f)
+        if (Vector3.Distance(player.position, transform.position) < 6f)
         {
             playerController.SetCanInteract(true);
             playerController.SetInteractuable(this);
