@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      burbuja_1_0: -3299796500553013415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

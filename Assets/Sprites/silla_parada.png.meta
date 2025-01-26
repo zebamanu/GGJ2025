@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      silla_parada_0: 7414206411306418146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

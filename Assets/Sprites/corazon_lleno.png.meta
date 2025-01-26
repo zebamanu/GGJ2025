@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      corazon_lleno_0: 1545607519109388259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

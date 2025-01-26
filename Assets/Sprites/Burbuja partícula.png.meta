@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Burbuja part\xEDcula_0": -109174185993003938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
