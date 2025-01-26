@@ -6,6 +6,7 @@ public class Puerta : Interactuable
     public bool isOpened;
     [SerializeField] private AudioClip openDoor;
     [SerializeField] private AudioClip closedDoor;
+    public string textoPuerta;
     private AudioSource audioSource;
     void Start()
     {
@@ -27,7 +28,7 @@ public class Puerta : Interactuable
         {
             audioSource.clip = closedDoor;
             audioSource.Play();
-            playerController.MostrarTextoLlave();
+            playerController.MostrarTexto(textoPuerta);
         }
     }
         

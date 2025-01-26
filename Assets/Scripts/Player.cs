@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform spriteTransform;
     [SerializeField] private GameObject interactLogo;
     [SerializeField] private NavMeshSurface navmesh;
-    [SerializeField] private GameObject textoLlave;
+    [SerializeField] private TMP_Text globoTexto;
 
     private SpriteRenderer spriteRenderer;
 
@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
         return interactuable;
     }
 
+    
+
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -66,16 +68,16 @@ public class Player : MonoBehaviour
         navmesh.BuildNavMesh();
     }
 
-    public void MostrarTextoLlave()
-    {
-        StartCoroutine(DesaparecerTextoLlave());
-        textoLlave.SetActive(true);
+    public void MostrarTexto(String texto){
+        globoTexto.text = texto;
+        globoTexto.active = true;
+        StartCoroutine(DesaparecerTexto());
     }
 
-    public IEnumerator DesaparecerTextoLlave()
+    public IEnumerator DesaparecerTexto()
     {
         yield return new WaitForSeconds(3);
-        textoLlave.SetActive(false);
+        globoTexto.active = false;
     }
 
     public IEnumerator BlinkCoroutine()

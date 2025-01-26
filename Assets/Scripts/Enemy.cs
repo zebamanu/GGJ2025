@@ -6,12 +6,15 @@ public class Enemy : MonoBehaviour
     private Transform playerTransform;
     private NavMeshAgent agent;
     private CapsuleCollider capsuleCollider;
+    private Animator animator;
+    public GameObject explosion;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerTransform = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        animator = GetComponent<Animator>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
@@ -40,6 +43,9 @@ public class Enemy : MonoBehaviour
             StartCoroutine(playerTransform.GetComponent<Player>().BlinkCoroutine());
             tiempoInvulnerable = 2;
             capsuleCollider.enabled = false;
+            //I want the explosion to be instantiated in the contact point of the collision
+            animator.SetTrigger("Laugh");
+            GameObject exp = Instantiate(explosion, collision.GetContact(0).point, Quaternion.identity);
         }
     }
 }

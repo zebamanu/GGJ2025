@@ -30,7 +30,7 @@ public class Menu : MonoBehaviour
         }
         if (timer >= 3){
             StartCoroutine(ChangeSprite());
-            timer = -1.2f;
+            timer = -1.8f;
         }
     }
 
